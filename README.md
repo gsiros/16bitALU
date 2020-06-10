@@ -3,4 +3,4 @@
 
  Group exercise for AUEB's Electronic Circuit Design Class using Intel's Quartus II CAD program and VHDL.
 
- Developers; Gkritsis Evgenios, Syros Georgios, Toumazatos Anastasios
+ Developers; Gkritsis Evgenios (https://github.com/Tzenios), Syros Georgios, Toumazatos Anastasios
