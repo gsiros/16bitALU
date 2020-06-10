@@ -1,0 +1,19 @@
+|MEROS_1
+A => Afinal.DATAB
+A => Afinal.DATAA
+B => Bfinal.DATAB
+B => Bfinal.DATAA
+carryIN => F.IN1
+carryIN => F.IN1
+carryIN => carryOUT.IN1
+carryIN => carryOUT.IN1
+carryIN => F.IN1
+carryIN => F.IN1
+Ainvert => Afinal.OUTPUTSELECT
+Binvert => Bfinal.OUTPUTSELECT
+F <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+carryOUT <= carryOUT.DB_MAX_OUTPUT_PORT_TYPE
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+
+

@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Georgios E. Syros\Desktop\ErgasiaDyo\simulation\qsim
+vErgasiaDyo
+Z1 !s100 ??Od@QLaNZEnF`QQPm94[3
+Z2 IJzbQ[R2QUaE91>Q:EM67j3
+Z3 VeR>Ib37g;YhjmmGe^2EO=2
+Z4 dC:\Users\Georgios E. Syros\Desktop\ERGASIA_2\ErgasiaDyo\simulation\qsim
+Z5 w1589019996
+Z6 8ErgasiaDyo.vo
+Z7 FErgasiaDyo.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|ErgasiaDyo.vo|
+Z10 o-work work -O0
+Z11 n@ergasia@dyo
+!i10b 1
+!s85 0
+Z12 !s108 1589019998.859000
+Z13 !s107 ErgasiaDyo.vo|
+!s101 -O0
+vErgasiaDyo_vlg_check_tst
+!i10b 1
+Z14 !s100 5EV:NACR9FnN6HGOg;_Qj3
+Z15 IlK5_[A;n>W[Baa7;N;AEf2
+Z16 VhPQEgH1Z40l]Ff;<4NH0j1
+R4
+Z17 w1589019995
+Z18 8ErgasiaDyo.vt
+Z19 FErgasiaDyo.vt
+L0 61
+R8
+r1
+!s85 0
+31
+Z20 !s108 1589019999.022000
+Z21 !s107 ErgasiaDyo.vt|
+Z22 !s90 -work|work|ErgasiaDyo.vt|
+!s101 -O0
+R10
+Z23 n@ergasia@dyo_vlg_check_tst
+vErgasiaDyo_vlg_sample_tst
+!i10b 1
+Z24 !s100 z=`^3zOiaST<ShTJ5MH@j0
+Z25 I6TYDDj2H<X<i=N8c`ZYRn0
+Z26 V;Dke<9lDlnBoZiB3z79>R3
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@ergasia@dyo_vlg_sample_tst
+vErgasiaDyo_vlg_vec_tst
+!i10b 1
+!s100 [[IiOS:oNOLBHFl3VWPZL3
+IMD;c;UhVM>>>33=DDC5H23
+Z28 V3SL5fENU7^3Z8X;G3lcM@3
+R4
+R17
+R18
+R19
+Z29 L0 452
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z30 n@ergasia@dyo_vlg_vec_tst

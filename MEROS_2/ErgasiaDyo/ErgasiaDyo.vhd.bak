@@ -1,0 +1,55 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+use work.ONE_BIT_ALU_PACK.all;
+
+ENTITY Ergasia2 IS
+	-- basika ports = A,B,CTRL (input) // F, Overflow (output)
+	PORT(CTRL : IN STD_logic_vector(2 DOWNTO 0);
+			A,B : IN std_logic_vector(15 DOWNTO 0);
+			F : OUT std_logic_vector(15 DOWNTO 0);
+			overflowOfTruth: OUT std_logic);
+	
+END Ergasia2;
+
+ARCHITECTURE Structural OF Ergasia2 IS
+
+signal cTemp : std_logic_vector(1 TO 15); 
+signal carryIN : std_logic;
+signal Ainvert : std_logic;
+signal Binvert : std_logic;
+signal carryOUT : std_logic;
+signal S : std_logic_vector(1 DOWNTO 0);
+
+BEGIN
+
+	PROCESS(CTRL) IS
+	BEGIN
+		CASE CTRL IS
+			WHEN "000"=> S<="00"; Ainvert<='0';  Binvert<='0'; carryIN<='0';
+			WHEN "001"=> S<="01"; Ainvert<='0';  Binvert<='0'; carryIN<='0';
+			WHEN "010"=> S<="10"; Ainvert<='0';  Binvert<='0'; carryIN<='0';
+			WHEN "011"=> S<="10"; Ainvert<='0';  Binvert<='1'; carryIN<='1';
+			WHEN "100"=> S<="00"; Ainvert<='1';  Binvert<='1'; carryIN<='0';
+			WHEN "101"=> S<="01"; Ainvert<='1';  Binvert<='1'; carryIN<='0';
+			WHEN "110"=> S<="11"; Ainvert<='0';  Binvert<='0'; carryIN<='0';
+		END CASE;
+	END PROCESS;
+
+	U1: ONE_BIT_ALU port map (A(0),B(0),carryIN, Ainvert, Binvert, F(0), cTemp(1), S, overflowOfTruth);
+	U2: ONE_BIT_ALU port map (A(1),B(1),cTemp(1), Ainvert, Binvert, F(1), cTemp(2), S, overflowOfTruth);
+	U3: ONE_BIT_ALU port map (A(2),B(2),cTemp(2), Ainvert, Binvert, F(2), cTemp(3), S, overflowOfTruth);
+	U4: ONE_BIT_ALU port map (A(3),B(3),cTemp(3), Ainvert, Binvert, F(3), cTemp(4), S, overflowOfTruth);
+	U5: ONE_BIT_ALU port map (A(4),B(4),cTemp(4), Ainvert, Binvert, F(4), cTemp(5), S, overflowOfTruth);
+	U6: ONE_BIT_ALU port map (A(5),B(5),cTemp(5), Ainvert, Binvert, F(5), cTemp(6), S, overflowOfTruth);
+	U7: ONE_BIT_ALU port map (A(6),B(6),cTemp(6), Ainvert, Binvert, F(6), cTemp(7), S, overflowOfTruth);
+	U8: ONE_BIT_ALU port map (A(7),B(7),cTemp(7), Ainvert, Binvert, F(7), cTemp(8), S, overflowOfTruth);
+	U9: ONE_BIT_ALU port map (A(8),B(8),cTemp(8), Ainvert, Binvert, F(8), cTemp(9), S, overflowOfTruth);
+	U10: ONE_BIT_ALU port map (A(9),B(9),cTemp(9), Ainvert, Binvert, F(9), cTemp(10), S, overflowOfTruth);
+	U11: ONE_BIT_ALU port map (A(10),B(10),cTemp(10), Ainvert, Binvert, F(10), cTemp(11), S, overflowOfTruth);
+	U12: ONE_BIT_ALU port map (A(11),B(11),cTemp(11), Ainvert, Binvert, F(11), cTemp(12), S, overflowOfTruth);
+	U13: ONE_BIT_ALU port map (A(12),B(12),cTemp(12), Ainvert, Binvert, F(12), cTemp(13), S, overflowOfTruth);
+	U14: ONE_BIT_ALU port map (A(13),B(13),cTemp(13), Ainvert, Binvert, F(13), cTemp(14), S, overflowOfTruth);
+	U15: ONE_BIT_ALU port map (A(14),B(14),cTemp(14), Ainvert, Binvert, F(14), cTemp(15), S, overflowOfTruth);
+	U16: ONE_BIT_ALU port map (A(15),B(15),cTemp(15), Ainvert, Binvert, F(15), carryOUT, S, overflowOfTruth);
+
+END Structural;

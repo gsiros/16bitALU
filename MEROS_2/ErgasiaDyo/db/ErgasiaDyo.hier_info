@@ -1,0 +1,374 @@
+|ErgasiaDyo
+CTRL[0] => Mux0.IN10
+CTRL[0] => Mux1.IN10
+CTRL[0] => Mux2.IN10
+CTRL[0] => Mux3.IN10
+CTRL[0] => Mux4.IN10
+CTRL[0] => Mux5.IN10
+CTRL[1] => Mux0.IN9
+CTRL[1] => Mux1.IN9
+CTRL[1] => Mux2.IN9
+CTRL[1] => Mux3.IN9
+CTRL[1] => Mux4.IN9
+CTRL[1] => Mux5.IN9
+CTRL[2] => Mux0.IN8
+CTRL[2] => Mux1.IN8
+CTRL[2] => Mux2.IN8
+CTRL[2] => Mux3.IN8
+CTRL[2] => Mux4.IN8
+CTRL[2] => Mux5.IN8
+A[0] => ONE_BIT_ALU:U1.A
+A[1] => ONE_BIT_ALU:U2.A
+A[2] => ONE_BIT_ALU:U3.A
+A[3] => ONE_BIT_ALU:U4.A
+A[4] => ONE_BIT_ALU:U5.A
+A[5] => ONE_BIT_ALU:U6.A
+A[6] => ONE_BIT_ALU:U7.A
+A[7] => ONE_BIT_ALU:U8.A
+A[8] => ONE_BIT_ALU:U9.A
+A[9] => ONE_BIT_ALU:U10.A
+A[10] => ONE_BIT_ALU:U11.A
+A[11] => ONE_BIT_ALU:U12.A
+A[12] => ONE_BIT_ALU:U13.A
+A[13] => ONE_BIT_ALU:U14.A
+A[14] => ONE_BIT_ALU:U15.A
+A[15] => ONE_BIT_ALU:U16.A
+B[0] => ONE_BIT_ALU:U1.B
+B[1] => ONE_BIT_ALU:U2.B
+B[2] => ONE_BIT_ALU:U3.B
+B[3] => ONE_BIT_ALU:U4.B
+B[4] => ONE_BIT_ALU:U5.B
+B[5] => ONE_BIT_ALU:U6.B
+B[6] => ONE_BIT_ALU:U7.B
+B[7] => ONE_BIT_ALU:U8.B
+B[8] => ONE_BIT_ALU:U9.B
+B[9] => ONE_BIT_ALU:U10.B
+B[10] => ONE_BIT_ALU:U11.B
+B[11] => ONE_BIT_ALU:U12.B
+B[12] => ONE_BIT_ALU:U13.B
+B[13] => ONE_BIT_ALU:U14.B
+B[14] => ONE_BIT_ALU:U15.B
+B[15] => ONE_BIT_ALU:U16.B
+F[0] <= ONE_BIT_ALU:U1.F
+F[1] <= ONE_BIT_ALU:U2.F
+F[2] <= ONE_BIT_ALU:U3.F
+F[3] <= ONE_BIT_ALU:U4.F
+F[4] <= ONE_BIT_ALU:U5.F
+F[5] <= ONE_BIT_ALU:U6.F
+F[6] <= ONE_BIT_ALU:U7.F
+F[7] <= ONE_BIT_ALU:U8.F
+F[8] <= ONE_BIT_ALU:U9.F
+F[9] <= ONE_BIT_ALU:U10.F
+F[10] <= ONE_BIT_ALU:U11.F
+F[11] <= ONE_BIT_ALU:U12.F
+F[12] <= ONE_BIT_ALU:U13.F
+F[13] <= ONE_BIT_ALU:U14.F
+F[14] <= ONE_BIT_ALU:U15.F
+F[15] <= ONE_BIT_ALU:U16.F
+overflowOfTruth <= overflowOfTruth.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ErgasiaDyo|ONE_BIT_ALU:U1
+A => Afinal.DATAB
+A => Afinal.DATAA
+B => Bfinal.DATAB
+B => Bfinal.DATAA
+carryIN => F.IN1
+carryIN => F.IN1
+carryIN => carryOUT.IN1
+carryIN => carryOUT.IN1
+carryIN => F.IN1
+carryIN => F.IN1
+Ainvert => Afinal.OUTPUTSELECT
+Binvert => Bfinal.OUTPUTSELECT
+F <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+carryOUT <= carryOUT.DB_MAX_OUTPUT_PORT_TYPE
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+
+
+|ErgasiaDyo|ONE_BIT_ALU:U2
+A => Afinal.DATAB
+A => Afinal.DATAA
+B => Bfinal.DATAB
+B => Bfinal.DATAA
+carryIN => F.IN1
+carryIN => F.IN1
+carryIN => carryOUT.IN1
+carryIN => carryOUT.IN1
+carryIN => F.IN1
+carryIN => F.IN1
+Ainvert => Afinal.OUTPUTSELECT
+Binvert => Bfinal.OUTPUTSELECT
+F <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+carryOUT <= carryOUT.DB_MAX_OUTPUT_PORT_TYPE
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+
+
+|ErgasiaDyo|ONE_BIT_ALU:U3
+A => Afinal.DATAB
+A => Afinal.DATAA
+B => Bfinal.DATAB
+B => Bfinal.DATAA
+carryIN => F.IN1
+carryIN => F.IN1
+carryIN => carryOUT.IN1
+carryIN => carryOUT.IN1
+carryIN => F.IN1
+carryIN => F.IN1
+Ainvert => Afinal.OUTPUTSELECT
+Binvert => Bfinal.OUTPUTSELECT
+F <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+carryOUT <= carryOUT.DB_MAX_OUTPUT_PORT_TYPE
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+
+
+|ErgasiaDyo|ONE_BIT_ALU:U4
+A => Afinal.DATAB
+A => Afinal.DATAA
+B => Bfinal.DATAB
+B => Bfinal.DATAA
+carryIN => F.IN1
+carryIN => F.IN1
+carryIN => carryOUT.IN1
+carryIN => carryOUT.IN1
+carryIN => F.IN1
+carryIN => F.IN1
+Ainvert => Afinal.OUTPUTSELECT
+Binvert => Bfinal.OUTPUTSELECT
+F <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+carryOUT <= carryOUT.DB_MAX_OUTPUT_PORT_TYPE
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+
+
+|ErgasiaDyo|ONE_BIT_ALU:U5
+A => Afinal.DATAB
+A => Afinal.DATAA
+B => Bfinal.DATAB
+B => Bfinal.DATAA
+carryIN => F.IN1
+carryIN => F.IN1
+carryIN => carryOUT.IN1
+carryIN => carryOUT.IN1
+carryIN => F.IN1
+carryIN => F.IN1
+Ainvert => Afinal.OUTPUTSELECT
+Binvert => Bfinal.OUTPUTSELECT
+F <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+carryOUT <= carryOUT.DB_MAX_OUTPUT_PORT_TYPE
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+
+
+|ErgasiaDyo|ONE_BIT_ALU:U6
+A => Afinal.DATAB
+A => Afinal.DATAA
+B => Bfinal.DATAB
+B => Bfinal.DATAA
+carryIN => F.IN1
+carryIN => F.IN1
+carryIN => carryOUT.IN1
+carryIN => carryOUT.IN1
+carryIN => F.IN1
+carryIN => F.IN1
+Ainvert => Afinal.OUTPUTSELECT
+Binvert => Bfinal.OUTPUTSELECT
+F <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+carryOUT <= carryOUT.DB_MAX_OUTPUT_PORT_TYPE
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+
+
+|ErgasiaDyo|ONE_BIT_ALU:U7
+A => Afinal.DATAB
+A => Afinal.DATAA
+B => Bfinal.DATAB
+B => Bfinal.DATAA
+carryIN => F.IN1
+carryIN => F.IN1
+carryIN => carryOUT.IN1
+carryIN => carryOUT.IN1
+carryIN => F.IN1
+carryIN => F.IN1
+Ainvert => Afinal.OUTPUTSELECT
+Binvert => Bfinal.OUTPUTSELECT
+F <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+carryOUT <= carryOUT.DB_MAX_OUTPUT_PORT_TYPE
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+
+
+|ErgasiaDyo|ONE_BIT_ALU:U8
+A => Afinal.DATAB
+A => Afinal.DATAA
+B => Bfinal.DATAB
+B => Bfinal.DATAA
+carryIN => F.IN1
+carryIN => F.IN1
+carryIN => carryOUT.IN1
+carryIN => carryOUT.IN1
+carryIN => F.IN1
+carryIN => F.IN1
+Ainvert => Afinal.OUTPUTSELECT
+Binvert => Bfinal.OUTPUTSELECT
+F <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+carryOUT <= carryOUT.DB_MAX_OUTPUT_PORT_TYPE
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+
+
+|ErgasiaDyo|ONE_BIT_ALU:U9
+A => Afinal.DATAB
+A => Afinal.DATAA
+B => Bfinal.DATAB
+B => Bfinal.DATAA
+carryIN => F.IN1
+carryIN => F.IN1
+carryIN => carryOUT.IN1
+carryIN => carryOUT.IN1
+carryIN => F.IN1
+carryIN => F.IN1
+Ainvert => Afinal.OUTPUTSELECT
+Binvert => Bfinal.OUTPUTSELECT
+F <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+carryOUT <= carryOUT.DB_MAX_OUTPUT_PORT_TYPE
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+
+
+|ErgasiaDyo|ONE_BIT_ALU:U10
+A => Afinal.DATAB
+A => Afinal.DATAA
+B => Bfinal.DATAB
+B => Bfinal.DATAA
+carryIN => F.IN1
+carryIN => F.IN1
+carryIN => carryOUT.IN1
+carryIN => carryOUT.IN1
+carryIN => F.IN1
+carryIN => F.IN1
+Ainvert => Afinal.OUTPUTSELECT
+Binvert => Bfinal.OUTPUTSELECT
+F <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+carryOUT <= carryOUT.DB_MAX_OUTPUT_PORT_TYPE
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+
+
+|ErgasiaDyo|ONE_BIT_ALU:U11
+A => Afinal.DATAB
+A => Afinal.DATAA
+B => Bfinal.DATAB
+B => Bfinal.DATAA
+carryIN => F.IN1
+carryIN => F.IN1
+carryIN => carryOUT.IN1
+carryIN => carryOUT.IN1
+carryIN => F.IN1
+carryIN => F.IN1
+Ainvert => Afinal.OUTPUTSELECT
+Binvert => Bfinal.OUTPUTSELECT
+F <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+carryOUT <= carryOUT.DB_MAX_OUTPUT_PORT_TYPE
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+
+
+|ErgasiaDyo|ONE_BIT_ALU:U12
+A => Afinal.DATAB
+A => Afinal.DATAA
+B => Bfinal.DATAB
+B => Bfinal.DATAA
+carryIN => F.IN1
+carryIN => F.IN1
+carryIN => carryOUT.IN1
+carryIN => carryOUT.IN1
+carryIN => F.IN1
+carryIN => F.IN1
+Ainvert => Afinal.OUTPUTSELECT
+Binvert => Bfinal.OUTPUTSELECT
+F <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+carryOUT <= carryOUT.DB_MAX_OUTPUT_PORT_TYPE
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+
+
+|ErgasiaDyo|ONE_BIT_ALU:U13
+A => Afinal.DATAB
+A => Afinal.DATAA
+B => Bfinal.DATAB
+B => Bfinal.DATAA
+carryIN => F.IN1
+carryIN => F.IN1
+carryIN => carryOUT.IN1
+carryIN => carryOUT.IN1
+carryIN => F.IN1
+carryIN => F.IN1
+Ainvert => Afinal.OUTPUTSELECT
+Binvert => Bfinal.OUTPUTSELECT
+F <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+carryOUT <= carryOUT.DB_MAX_OUTPUT_PORT_TYPE
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+
+
+|ErgasiaDyo|ONE_BIT_ALU:U14
+A => Afinal.DATAB
+A => Afinal.DATAA
+B => Bfinal.DATAB
+B => Bfinal.DATAA
+carryIN => F.IN1
+carryIN => F.IN1
+carryIN => carryOUT.IN1
+carryIN => carryOUT.IN1
+carryIN => F.IN1
+carryIN => F.IN1
+Ainvert => Afinal.OUTPUTSELECT
+Binvert => Bfinal.OUTPUTSELECT
+F <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+carryOUT <= carryOUT.DB_MAX_OUTPUT_PORT_TYPE
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+
+
+|ErgasiaDyo|ONE_BIT_ALU:U15
+A => Afinal.DATAB
+A => Afinal.DATAA
+B => Bfinal.DATAB
+B => Bfinal.DATAA
+carryIN => F.IN1
+carryIN => F.IN1
+carryIN => carryOUT.IN1
+carryIN => carryOUT.IN1
+carryIN => F.IN1
+carryIN => F.IN1
+Ainvert => Afinal.OUTPUTSELECT
+Binvert => Bfinal.OUTPUTSELECT
+F <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+carryOUT <= carryOUT.DB_MAX_OUTPUT_PORT_TYPE
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+
+
+|ErgasiaDyo|ONE_BIT_ALU:U16
+A => Afinal.DATAB
+A => Afinal.DATAA
+B => Bfinal.DATAB
+B => Bfinal.DATAA
+carryIN => F.IN1
+carryIN => F.IN1
+carryIN => carryOUT.IN1
+carryIN => carryOUT.IN1
+carryIN => F.IN1
+carryIN => F.IN1
+Ainvert => Afinal.OUTPUTSELECT
+Binvert => Bfinal.OUTPUTSELECT
+F <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+carryOUT <= carryOUT.DB_MAX_OUTPUT_PORT_TYPE
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+
+
